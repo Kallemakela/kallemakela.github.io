@@ -25,7 +25,7 @@ function renderBio(bio) {
 function renderWork(content) {
     const container = document.getElementById('work-container');
     const workItems = [
-        ...content.publications.map(p => ({ ...p, type: 'publication' })),
+        ...content.papers.map(p => ({ ...p, type: 'paper' })),
         ...content.projects.map(p => ({ ...p, type: 'project' })),
         ...content.contributions.map(c => ({ ...c, type: 'contribution' }))
     ];
@@ -33,32 +33,47 @@ function renderWork(content) {
 }
 
 function createWorkItemHTML(item) {
-    const typeLabels = { publication: 'Publication', project: 'Project', contribution: 'Contribution' };
+    const typeLabels = { paper: 'Paper', project: 'Project', contribution: 'Contribution' };
     const typeTag = `<span class="tag tag-type-${item.type}">${typeLabels[item.type]}</span>`;
     const tags = item.tags.map(tag => `<span class="tag tag-${tag.replace(/\s+/g, '-')}">${escapeHtml(tag)}</span>`).join('');
     
     let subtitle = '';
     let linkButton = '';
-    if (item.type === 'publication') {
+    if (item.type === 'paper') {
         subtitle = escapeHtml(item.meta);
         if (item.links?.github) {
-            linkButton = `<button class="work-item-link" onclick="event.stopPropagation(); event.preventDefault(); window.open('${item.links.github}', '_blank');">GitHub</button>`;
+            linkButton = `<button class="work-item-link" onclick="window.open('${item.links.github}', '_blank')">GitHub</button>`;
         }
     } else if (item.type === 'contribution') {
         subtitle = escapeHtml(item.links?.[0]?.label || '');
     }
     
-    const desc = item.type === 'publication' 
+    const desc = item.type === 'paper' 
         ? (item.contributors ? `Contributors: ${item.contributors.map(c => c === 'Kalle Mäkelä' ? `<strong>${escapeHtml(c)}</strong>` : escapeHtml(c)).join('; ')}` : '')
         : escapeHtml(item.description);
 
-    return `<a href="${item.url}" class="work-item" target="_blank">
-        <div class="work-item-title">${escapeHtml(item.title)}</div>
+    const thumbnailHTML = createThumbnailHTML(item.thumbnail);
+
+    const titleLink = `<a href="${item.url}" class="work-item-title-link" target="_blank">${escapeHtml(item.title)}</a>`;
+    
+    return `<div class="work-item">
+        <a href="${item.url}" class="work-item-thumbnail-link" target="_blank">${thumbnailHTML}</a>
+        <div class="work-item-title">${titleLink}</div>
         ${subtitle ? `<div class="work-item-subtitle">${subtitle}</div>` : ''}
         ${linkButton ? `<div class="work-item-links">${linkButton}</div>` : ''}
         ${desc ? `<div class="work-item-desc">${desc}</div>` : ''}
         <div class="work-item-tags">${typeTag}${tags}</div>
-    </a>`;
+    </div>`;
+}
+
+function createThumbnailHTML(thumbnailPath) {
+    if (!thumbnailPath) return '';
+    
+    if (thumbnailPath.endsWith('.mp4')) {
+        return `<div class="work-item-thumbnail"><video autoplay loop muted playsinline src="${thumbnailPath}"></video></div>`;
+    } else {
+        return `<div class="work-item-thumbnail"><img src="${thumbnailPath}" alt="" loading="lazy"></div>`;
+    }
 }
 
 function escapeHtml(text) {

@@ -1,1 +1,136 @@
-<h1>test<\h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalle Mäkelä</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section>
+        <h1><strong>Kalle Mäkelä</strong></h1>
+    </section>
+
+    <section id="publications">
+        <h1>Publications</h1>
+
+        <a href="https://doi.org/10.1109/TAFFC.2023.3315971" class="publication">
+            <div class="publication-title">NEMO: A Database for Emotion Analysis Using Functional Near-Infrared Spectroscopy</div>
+            <div class="publication-meta">IEEE Transactions on Affective Computing | 2024 | Journal article</div>
+            <div class="publication-links">
+                <button class="publication-doi" onclick="event.stopPropagation(); event.preventDefault(); window.open('https://doi.org/10.1109/TAFFC.2023.3315971', '_blank');">DOI: 10.1109/TAFFC.2023.3315971</button>
+                <button class="publication-github" onclick="event.stopPropagation(); event.preventDefault(); window.open('https://github.com/Cognitive-Computing-Group/NEMO', '_blank');">GitHub</button>
+            </div>
+            <div class="publication-contributors">Contributors: Michiel Spapé; <strong>Kalle Mäkelä</strong>; Tuukka Ruotsalo</div>
+            <div class="publication-tags">
+                <span class="tag tag-nirs">nirs</span>
+                <span class="tag tag-neuroimaging">neuroimaging</span>
+				<span class="tag tag-bci">BCI</span>
+                <span class="tag tag-open-source">open source</span>
+            </div>
+        </a>
+
+        <a href="https://doi.org/10.1109/TAFFC.2023.3273916" class="publication">
+            <div class="publication-title">Crowdsourcing Affective Annotations Via fNIRS-BCI</div>
+            <div class="publication-meta">IEEE Transactions on Affective Computing | 2024-01 | Journal article</div>
+            <button class="publication-doi" onclick="event.stopPropagation(); event.preventDefault(); window.open('https://doi.org/10.1109/TAFFC.2023.3273916', '_blank');">DOI: 10.1109/TAFFC.2023.3273916</button>
+            <div class="publication-contributors">Contributors: Tuukka Ruotsalo; <strong>Kalle Mäkelä</strong>; Michiel Spapé</div>
+            <div class="publication-tags">
+                <span class="tag tag-nirs">nirs</span>
+                <span class="tag tag-neuroimaging">neuroimaging</span>
+                <span class="tag tag-bci">BCI</span>
+            </div>
+        </a>
+
+        <a href="https://doi.org/10.1145/3581783.3613442" class="publication">
+            <div class="publication-title">Feeling Positive? Predicting Emotional Image Similarity from Brain Signals</div>
+            <div class="publication-meta">2023-10-26 | Conference paper</div>
+            <button class="publication-doi" onclick="event.stopPropagation(); event.preventDefault(); window.open('https://doi.org/10.1145/3581783.3613442', '_blank');">DOI: 10.1145/3581783.3613442</button>
+            <div class="publication-contributors">Contributors: Tuukka Ruotsalo; <strong>Kalle Mäkelä</strong>; Michiel M. Spapé; Luis A. Leiva</div>
+            <div class="publication-tags">
+                <span class="tag tag-nirs">nirs</span>
+                <span class="tag tag-neuroimaging">neuroimaging</span>
+                <span class="tag tag-bci">BCI</span>
+            </div>
+        </a>
+
+        <a href="https://doi.org/10.1145/3539618.3591946" class="publication hidden-item">
+            <div class="publication-title">Affective Relevance: Inferring Emotional Responses via fNIRS Neuroimaging</div>
+            <div class="publication-meta">2023-07-19 | Conference paper</div>
+            <button class="publication-doi" onclick="event.stopPropagation(); event.preventDefault(); window.open('https://doi.org/10.1145/3539618.3591946', '_blank');">DOI: 10.1145/3539618.3591946</button>
+            <div class="publication-contributors">Contributors: Tuukka Ruotsalo; <strong>Kalle Mäkelä</strong>; Michiel M. Spapé; Luis A. Leiva</div>
+            <div class="publication-tags">
+                <span class="tag tag-nirs">nirs</span>
+                <span class="tag tag-neuroimaging">neuroimaging</span>
+                <span class="tag tag-bci">BCI</span>
+            </div>
+        </a>
+        <span class="show-more-text" onclick="toggleShowMore('publications')" aria-label="Show more">Show more</span>
+    </section>
+
+    <section id="projects">
+        <h1>Public Projects</h1>
+        <a href="https://github.com/kallemakela/NIRSParse" class="project code">
+            <div class="project-title">NIRSParse</div>
+            <div class="project-desc">A Python library for parsing NIRS data</div>
+            <div class="project-tags">
+                <span class="tag tag-python">python</span>
+                <span class="tag tag-pytorch">pytorch</span>
+                <span class="tag tag-nirs">nirs</span>
+            </div>
+        </a>
+
+        <a href="https://github.com/kallemakela/jopvim" class="project code">
+            <div class="project-title">jopvim</div>
+            <div class="project-desc">Vim integration for Joplin</div>
+            <div class="project-tags">
+                <span class="tag tag-lua">lua</span>
+                <span class="tag tag-vim">vim</span>
+            </div>
+        </a>
+
+        <a href="https://github.com/Kallemakela/unogs" class="project code hidden-item">
+            <div class="project-title">unogs</div>
+            <div class="project-desc">Browser extension for unogs.com that adds watched titles tracking and watchlist functionality</div>
+            <div class="project-tags">
+                <span class="tag tag-javascript">javascript</span>
+                <span class="tag tag-browser-extension">browser extension</span>
+            </div>
+        </a>
+        <span class="show-more-text" onclick="toggleShowMore('projects')" aria-label="Show more">Show more</span>
+    </section>
+
+    <section id="contributions">
+        <h1>Open Source Contributions</h1>
+
+        <a href="https://github.com/mne-tools/mne-bids" class="contribution">
+            <div class="contribution-title">mne-bids</div>
+            <div class="contribution-desc">Handle channel name mismatches between raw data and BIDS channels.tsv</div>
+            <div class="contribution-links">
+                <button class="contribution-link" onclick="event.stopPropagation(); event.preventDefault(); window.open('https://github.com/mne-tools/mne-bids/pull/1466', '_blank');">PR #1466</button>
+            </div>
+            <div class="contribution-tags">
+                <span class="tag tag-python">python</span>
+                <span class="tag tag-nirs">nirs</span>
+                <span class="tag tag-neuroimaging">neuroimaging</span>
+            </div>
+        </a>
+
+        <a href="https://github.com/laurent22/joplin" class="contribution hidden-item">
+            <div class="contribution-title">Joplin</div>
+            <div class="contribution-desc">Make mobile editor remember editing mode between sessions</div>
+            <div class="contribution-links">
+                <button class="contribution-link" onclick="event.stopPropagation(); event.preventDefault(); window.open('https://github.com/laurent22/joplin/pull/13675', '_blank');">PR #13675</button>
+            </div>
+            <div class="contribution-tags">
+                <span class="tag tag-javascript">javascript</span>
+                <span class="tag tag-react">react</span>
+                <span class="tag tag-react-native">react-native</span>
+            </div>
+        </a>
+        <span class="show-more-text" onclick="toggleShowMore('contributions')" aria-label="Show more">Show more</span>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

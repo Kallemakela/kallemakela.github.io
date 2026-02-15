@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #e0e0e0;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #1a1a1a;
+}
+
+section {
+    margin-bottom: 3rem;
+    background: #1f1f1f;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #f0f0f0;
+    text-transform: capitalize;
+}
+
+.project {
+    display: block;
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.project:hover {
+    background: #333333;
+    border-color: #4a4a4a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.project-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.project-desc {
+    color: #b0b0b0;
+    margin-bottom: 0.75rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.tag-nirs {
+    background: #5b4cff;
+    color: #ffffff;
+}
+
+.tag-neuroimaging {
+    background: #00c896;
+    color: #ffffff;
+}
+
+.tag-bci {
+    background: #ff6b35;
+    color: #ffffff;
+}
+
+.tag-open-source {
+    background: #ffd93d;
+    color: #1a1a1a;
+}
+
+.tag-python {
+    background: #3776ab;
+    color: #ffffff;
+}
+
+.tag-pytorch {
+    background: #ee4c2c;
+    color: #ffffff;
+}
+
+.tag-lua {
+    background: #000080;
+    color: #ffffff;
+}
+
+.tag-vim {
+    background: #019733;
+    color: #ffffff;
+}
+
+.tag-javascript {
+    background: #f7df1e;
+    color: #1a1a1a;
+}
+
+.tag-browser-extension {
+    background: #4285f4;
+    color: #ffffff;
+}
+
+.tag-react {
+    background: #61dafb;
+    color: #1a1a1a;
+}
+
+.tag-react-native {
+    background: #00d8ff;
+    color: #1a1a1a;
+}
+
+.publication {
+    display: block;
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.publication:hover {
+    background: #333333;
+    border-color: #4a4a4a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.publication-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+
+.publication-meta {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.publication-doi {
+    color: #6ab7ff;
+    font-size: 0.875rem;
+    text-decoration: none;
+    pointer-events: auto;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-family: inherit;
+}
+
+.publication-doi:hover {
+    text-decoration: underline;
+}
+
+.publication-links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.publication-github {
+    color: #6ab7ff;
+    font-size: 0.875rem;
+    text-decoration: none;
+    pointer-events: auto;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-family: inherit;
+}
+
+.publication-github:hover {
+    text-decoration: underline;
+}
+
+.publication-contributors {
+    color: #b0b0b0;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.publication-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.contribution {
+    display: block;
+    background: #2a2a2a;
+    border: 1px solid #3a3a3a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.contribution:hover {
+    background: #333333;
+    border-color: #4a4a4a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.contribution-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.contribution-desc {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    margin-bottom: 0.75rem;
+}
+
+.contribution-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.contribution-link {
+    color: #6ab7ff;
+    font-size: 0.875rem;
+    text-decoration: none;
+    pointer-events: auto;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-family: inherit;
+}
+
+.contribution-link:hover {
+    text-decoration: underline;
+}
+
+.contribution-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.show-more-text {
+    color: #6ab7ff;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-family: inherit;
+    margin-top: 1rem;
+    transition: color 0.2s ease;
+    display: inline-block;
+}
+
+.show-more-text:hover {
+    color: #7fc7ff;
+    text-decoration: underline;
+}
+

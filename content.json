@@ -9,11 +9,7 @@
       "doi": "10.1109/TAFFC.2023.3315971",
       "url": "https://doi.org/10.1109/TAFFC.2023.3315971",
       "meta": "IEEE Transactions on Affective Computing | 2024 | Journal article",
-      "contributors": [
-        "Michiel Spapé",
-        "Kalle Mäkelä",
-        "Tuukka Ruotsalo"
-      ],
+      "contributors": ["Michiel Spapé", "Kalle Mäkelä", "Tuukka Ruotsalo"],
       "tags": ["nirs", "neuroimaging", "BCI", "open source"],
       "links": {
         "github": "https://github.com/Cognitive-Computing-Group/NEMO"
@@ -24,11 +20,7 @@
       "doi": "10.1109/TAFFC.2023.3273916",
       "url": "https://doi.org/10.1109/TAFFC.2023.3273916",
       "meta": "IEEE Transactions on Affective Computing | 2024-01 | Journal article",
-      "contributors": [
-        "Tuukka Ruotsalo",
-        "Kalle Mäkelä",
-        "Michiel Spapé"
-      ],
+      "contributors": ["Tuukka Ruotsalo", "Kalle Mäkelä", "Michiel Spapé"],
       "tags": ["nirs", "neuroimaging", "BCI"]
     },
     {
@@ -59,12 +51,6 @@
     }
   ],
   "projects": [
-    {
-      "title": "NIRSParse",
-      "url": "https://github.com/kallemakela/NIRSParse",
-      "description": "A Python library for parsing NIRS data",
-      "tags": ["python", "pytorch", "nirs"]
-    },
     {
       "title": "jopvim",
       "url": "https://github.com/kallemakela/jopvim",

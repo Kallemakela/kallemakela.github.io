@@ -8,7 +8,7 @@ body {
     font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, 'Roboto Mono', monospace;
     line-height: 1.6;
     color: #e0e0e0;
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
     background-color: #1a1a1a;
@@ -16,9 +16,11 @@ body {
 
 section {
     margin-bottom: 3rem;
-    background: #1f1f1f;
     padding: 2rem;
-    border-radius: 12px;
+}
+
+#bio, #work {
+    background: transparent;
 }
 
 h1 {
@@ -28,42 +30,108 @@ h1 {
     text-transform: capitalize;
 }
 
-.project {
+#bio {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 900px) {
+    .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.work-item {
     display: block;
     background: #2a2a2a;
     border: 1px solid #3a3a3a;
     border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
+    padding: 1.25rem;
     text-decoration: none;
     color: inherit;
     cursor: pointer;
     transition: all 0.2s ease;
 }
 
-.project:hover {
+.work-item:hover {
     background: #333333;
     border-color: #4a4a4a;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
-.project-title {
-    font-size: 1.2rem;
+.work-item-title {
+    font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
     color: #ffffff;
+    line-height: 1.3;
 }
 
-.project-desc {
+.work-item-subtitle {
+    color: #909090;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.work-item-desc {
     color: #b0b0b0;
+    font-size: 0.9rem;
     margin-bottom: 0.75rem;
+    line-height: 1.4;
 }
 
-.project-tags {
+.work-item-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.4rem;
+}
+
+.work-item-links {
+    margin-bottom: 0.5rem;
+}
+
+.work-item-link {
+    color: #6ab7ff;
+    font-size: 0.875rem;
+    text-decoration: none;
+    pointer-events: auto;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-family: inherit;
+}
+
+.work-item-link:hover {
+    text-decoration: underline;
+}
+
+.tag-type-publication {
+    background: #ff6b6b;
+    color: #ffffff;
+}
+
+.tag-type-project {
+    background: #4ecdc4;
+    color: #1a1a1a;
+}
+
+.tag-type-contribution {
+    background: #95e1d3;
+    color: #1a1a1a;
 }
 
 .tag {
@@ -131,171 +199,5 @@ h1 {
 .tag-react-native {
     background: #00d8ff;
     color: #1a1a1a;
-}
-
-.publication {
-    display: block;
-    background: #2a2a2a;
-    border: 1px solid #3a3a3a;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.publication:hover {
-    background: #333333;
-    border-color: #4a4a4a;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-
-.publication-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-}
-
-
-.publication-meta {
-    color: #b0b0b0;
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
-}
-
-.publication-doi {
-    color: #6ab7ff;
-    font-size: 0.875rem;
-    text-decoration: none;
-    pointer-events: auto;
-    cursor: pointer;
-    border: none;
-    background: none;
-    padding: 0;
-    font-family: inherit;
-}
-
-.publication-doi:hover {
-    text-decoration: underline;
-}
-
-.publication-links {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.publication-github {
-    color: #6ab7ff;
-    font-size: 0.875rem;
-    text-decoration: none;
-    pointer-events: auto;
-    cursor: pointer;
-    border: none;
-    background: none;
-    padding: 0;
-    font-family: inherit;
-}
-
-.publication-github:hover {
-    text-decoration: underline;
-}
-
-.publication-contributors {
-    color: #b0b0b0;
-    font-size: 0.875rem;
-    margin-top: 0.5rem;
-}
-
-.publication-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 0.75rem;
-}
-
-.contribution {
-    display: block;
-    background: #2a2a2a;
-    border: 1px solid #3a3a3a;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.contribution:hover {
-    background: #333333;
-    border-color: #4a4a4a;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-
-.contribution-title {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    color: #ffffff;
-}
-
-.contribution-desc {
-    color: #b0b0b0;
-    font-size: 0.9rem;
-    margin-bottom: 0.75rem;
-}
-
-.contribution-links {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.contribution-link {
-    color: #6ab7ff;
-    font-size: 0.875rem;
-    text-decoration: none;
-    pointer-events: auto;
-    cursor: pointer;
-    border: none;
-    background: none;
-    padding: 0;
-    font-family: inherit;
-}
-
-.contribution-link:hover {
-    text-decoration: underline;
-}
-
-.contribution-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 0.75rem;
-}
-
-.hidden {
-    display: none;
-}
-
-.show-more-text {
-    color: #6ab7ff;
-    cursor: pointer;
-    font-size: 0.9rem;
-    font-family: inherit;
-    margin-top: 1rem;
-    transition: color 0.2s ease;
-    display: inline-block;
-}
-
-.show-more-text:hover {
-    color: #7fc7ff;
-    text-decoration: underline;
 }
 

@@ -54,6 +54,18 @@
       "tags": ["paper", "fnirs", "neuroimaging", "BCI"]
     },
     {
+      "title": "mne-bids PR #1466",
+      "url": "https://github.com/mne-tools/mne-bids/pull/1466",
+      "description": "Handle channel name mismatches between raw data and BIDS channels.tsv",
+      "tags": ["contribution", "python", "fnirs", "neuroimaging"]
+    },
+    {
+      "title": "Joplin PR #13675",
+      "url": "https://github.com/laurent22/joplin/pull/13675",
+      "description": "Make mobile editor remember editing mode between sessions",
+      "tags": ["contribution", "javascript", "react", "react-native"]
+    },
+    {
       "title": "Causal Reasoning in Reinforcement Learning",
       "url": "https://github.com/Kallemakela/causal-rl",
       "description": "B.Sc. thesis project on using causal reasoning to improve reinforcement learning methods. Mostly theoretical work on multi-armed bandits.",
@@ -72,18 +84,6 @@
       "url": "https://github.com/kallemakela/jopvim",
       "description": "Vim integration for Joplin",
       "tags": ["project", "lua", "vim"]
-    },
-    {
-      "title": "mne-bids",
-      "url": "https://github.com/mne-tools/mne-bids/pull/1466",
-      "description": "Handle channel name mismatches between raw data and BIDS channels.tsv",
-      "tags": ["contribution", "python", "fnirs", "neuroimaging"]
-    },
-    {
-      "title": "Joplin",
-      "url": "https://github.com/laurent22/joplin/pull/13675",
-      "description": "Make mobile editor remember editing mode between sessions",
-      "tags": ["contribution", "javascript", "react", "react-native"]
     }
   ]
 }

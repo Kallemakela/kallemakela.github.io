@@ -7,8 +7,8 @@
 body {
     font-family: 'JetBrains Mono', 'SF Mono', Menlo, Consolas, 'Roboto Mono', monospace;
     line-height: 1.6;
-    color: #c0caf5;
-    background-color: #1a1b26;
+    color: #DCD7BA;
+    background-color: #1F1F28;
     min-height: 100vh;
     padding: 0;
 }
@@ -20,13 +20,13 @@ body::before {
     left: 0;
     right: 0;
     height: 2px;
-    background: #7aa2f7;
+    background: #7E9CD8;
 }
 
 section {
     margin-bottom: 0;
     padding: 2rem 3rem;
-    border-bottom: 1px solid #24283b;
+    border-bottom: 1px solid #363646;
 }
 
 #bio {
@@ -38,21 +38,21 @@ section {
 #bio-name {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #7aa2f7;
+    color: #7E9CD8;
     font-weight: 600;
 }
 
 #bio-name::before {
     content: '#';
-    color: #565f89;
+    color: #727169;
     margin-right: 0.5rem;
 }
 
 #bio-description {
-    color: #a9b1d6;
+    color: #DCD7BA;
     font-size: 0.95rem;
     padding-left: 1.2rem;
-    border-left: 2px solid #24283b;
+    border-left: 2px solid #363646;
 }
 
 #work {
@@ -63,14 +63,14 @@ section {
 #work h1 {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
-    color: #7aa2f7;
+    color: #7E9CD8;
     font-weight: 600;
     text-transform: none;
 }
 
 #work h1::before {
     content: '>';
-    color: #9ece6a;
+    color: #98BB6C;
     margin-right: 0.5rem;
 }
 
@@ -78,13 +78,13 @@ section {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1px;
-    background: #24283b;
-    border: 1px solid #24283b;
+    background: #363646;
+    border: 1px solid #363646;
 }
 
 .work-item {
     display: block;
-    background: #1a1b26;
+    background: #1F1F28;
     padding: 1.25rem;
     text-decoration: none;
     color: inherit;
@@ -94,8 +94,8 @@ section {
 }
 
 .work-item:hover {
-    background: #24283b;
-    border-left-color: #7aa2f7;
+    background: #2A2A37;
+    border-left-color: #7E9CD8;
 }
 
 .work-item-title-link {
@@ -104,7 +104,7 @@ section {
 }
 
 .work-item-title-link:hover {
-    color: #7aa2f7;
+    color: #7E9CD8;
 }
 
 .work-item-thumbnail-link {
@@ -116,22 +116,22 @@ section {
     font-size: 1rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: #c0caf5;
+    color: #DCD7BA;
     line-height: 1.3;
 }
 
 .work-item:hover .work-item-title {
-    color: #7aa2f7;
+    color: #7E9CD8;
 }
 
 .work-item-subtitle {
-    color: #565f89;
+    color: #727169;
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
 }
 
 .work-item-desc {
-    color: #a9b1d6;
+    color: #DCD7BA;
     font-size: 0.9rem;
     margin-bottom: 0.75rem;
     line-height: 1.4;
@@ -148,7 +148,7 @@ section {
 }
 
 .work-item-link {
-    color: #9ece6a;
+    color: #98BB6C;
     font-size: 0.875rem;
     text-decoration: none;
     pointer-events: auto;
@@ -161,14 +161,14 @@ section {
 
 .work-item-link:hover {
     text-decoration: underline;
-    color: #73daca;
+    color: #7FB4CA;
 }
 
 .work-item-thumbnail {
     margin-bottom: 0.75rem;
     overflow: hidden;
-    background: #16161e;
-    border: 1px solid #24283b;
+    background: #16161D;
+    border: 1px solid #363646;
 }
 
 .work-item-thumbnail img,
@@ -190,78 +190,78 @@ section {
 }
 
 .tag-type-paper {
-    border-color: #f7768e;
-    color: #f7768e;
+    border-color: #E46876;
+    color: #E46876;
 }
 
 .tag-type-project {
-    border-color: #7dcfff;
-    color: #7dcfff;
+    border-color: #7FB4CA;
+    color: #7FB4CA;
 }
 
 .tag-type-contribution {
-    border-color: #bb9af7;
-    color: #bb9af7;
+    border-color: #957FB8;
+    color: #957FB8;
 }
 
 .tag-nirs {
-    border-color: #9ece6a;
-    color: #9ece6a;
+    border-color: #98BB6C;
+    color: #98BB6C;
 }
 
 .tag-neuroimaging {
-    border-color: #73daca;
-    color: #73daca;
+    border-color: #7FB4CA;
+    color: #7FB4CA;
 }
 
 .tag-bci {
-    border-color: #ff9e64;
-    color: #ff9e64;
+    border-color: #DCA561;
+    color: #DCA561;
 }
 
 .tag-open-source {
-    border-color: #e0af68;
-    color: #e0af68;
+    border-color: #E6C384;
+    color: #E6C384;
 }
 
 .tag-python {
-    border-color: #7aa2f7;
-    color: #7aa2f7;
+    border-color: #7E9CD8;
+    color: #7E9CD8;
 }
 
 .tag-pytorch {
-    border-color: #f7768e;
-    color: #f7768e;
+    border-color: #E46876;
+    color: #E46876;
 }
 
 .tag-lua {
-    border-color: #7dcfff;
-    color: #7dcfff;
+    border-color: #7FB4CA;
+    color: #7FB4CA;
 }
 
 .tag-vim {
-    border-color: #9ece6a;
-    color: #9ece6a;
+    border-color: #98BB6C;
+    color: #98BB6C;
 }
 
 .tag-javascript {
-    border-color: #e0af68;
-    color: #e0af68;
+    border-color: #E6C384;
+    color: #E6C384;
 }
 
 .tag-browser-extension {
-    border-color: #bb9af7;
-    color: #bb9af7;
+    border-color: #957FB8;
+    color: #957FB8;
 }
 
 .tag-react {
-    border-color: #7dcfff;
-    color: #7dcfff;
+    border-color: #7FB4CA;
+    color: #7FB4CA;
 }
 
 .tag-react-native {
-    border-color: #73daca;
-    color: #73daca;
+    border-color: #7FB4CA;
+    color: #7FB4CA;
 }
 
 @media (max-width: 768px) {

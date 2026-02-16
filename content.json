@@ -31,9 +31,10 @@
     },
     {
       "title": "Diffusion Planning",
+      "url": "https://github.com/Kallemakela/diffusion-planning/blob/main/Diffusion-planning-for-grounded-language-learning.pdf",
       "description": "Using diffusion models to create plans in RL grid-world environments given the initial state and a natural language instruction, such as 'move the ball to the circle'. Diffusion is much faster than decision-transformers since it's not autoregressive, with slightly worse performance.",
       "thumbnail": "thumbnails/diffusion-planning.png",
-      "tags": ["project", "RL", "diffusion", "closed source", "python"]
+      "tags": ["project", "RL", "diffusion", "python"]
     },
     {
       "title": "Crowdsourcing Affective Annotations Via fNIRS-BCI",

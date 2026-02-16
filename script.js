@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     if (!content) return;
 
     renderBio(content.bio);
-    renderWork(content);
+    renderWork(content.items);
 });
 
 async function loadContent() {
@@ -22,35 +22,52 @@ function renderBio(bio) {
     document.getElementById('bio-description').textContent = bio.description;
 }
 
-function renderWork(content) {
+function renderWork(items) {
     const container = document.getElementById('work-container');
-    const workItems = [
-        ...content.papers.map(p => ({ ...p, type: 'paper' })),
-        ...content.projects.map(p => ({ ...p, type: 'project' })),
-        ...content.contributions.map(c => ({ ...c, type: 'contribution' }))
-    ];
-    container.innerHTML = workItems.map(item => createWorkItemHTML(item)).join('');
+    container.innerHTML = items.map(item => createWorkItemHTML(item)).join('');
+    
+    container.querySelectorAll('.work-item').forEach((el, index) => {
+        el.addEventListener('click', (e) => {
+            if (e.target.closest('a, button')) return;
+            window.open(items[index].url, '_blank');
+        });
+    });
+}
+
+function getItemType(tags) {
+    if (tags?.includes('paper')) return 'paper';
+    if (tags?.includes('project')) return 'project';
+    if (tags?.includes('contribution')) return 'contribution';
+    return 'other';
 }
 
 function createWorkItemHTML(item) {
-    const typeLabels = { paper: 'Paper', project: 'Project', contribution: 'Contribution' };
-    const typeTag = `<span class="tag tag-type-${item.type}">${typeLabels[item.type]}</span>`;
-    const tags = item.tags.map(tag => `<span class="tag tag-${tag.replace(/\s+/g, '-')}">${escapeHtml(tag)}</span>`).join('');
+    const type = getItemType(item.tags);
+    const typeLabels = { paper: 'Paper', project: 'Project', contribution: 'Contribution', other: 'Other' };
+    const typeTag = `<span class="tag tag-type-${type}">${typeLabels[type]}</span>`;
+    const tags = item.tags
+        ?.filter(tag => !['paper', 'project', 'contribution'].includes(tag))
+        ?.map(tag => `<span class="tag tag-${tag.replace(/\s+/g, '-')}">${escapeHtml(tag)}</span>`)
+        .join('') || '';
     
     let subtitle = '';
     let linkButton = '';
-    if (item.type === 'paper') {
+    if (type === 'paper') {
         subtitle = escapeHtml(item.meta);
         if (item.links?.github) {
             linkButton = `<button class="work-item-link" onclick="window.open('${item.links.github}', '_blank')">GitHub</button>`;
         }
-    } else if (item.type === 'contribution') {
+    } else if (type === 'contribution') {
         subtitle = escapeHtml(item.links?.[0]?.label || '');
     }
     
-    const desc = item.type === 'paper' 
+    const desc = type === 'paper' 
         ? (item.contributors ? `Contributors: ${item.contributors.map(c => c === 'Kalle Mäkelä' ? `<strong>${escapeHtml(c)}</strong>` : escapeHtml(c)).join('; ')}` : '')
         : escapeHtml(item.description);
+
+    const closedSourceNote = item.tags?.includes('closed-source') 
+        ? '<div class="work-item-closed-source">Closed-source project, details available on request</div>' 
+        : '';
 
     const thumbnailHTML = createThumbnailHTML(item.thumbnail);
 
@@ -62,6 +79,7 @@ function createWorkItemHTML(item) {
         ${subtitle ? `<div class="work-item-subtitle">${subtitle}</div>` : ''}
         ${linkButton ? `<div class="work-item-links">${linkButton}</div>` : ''}
         ${desc ? `<div class="work-item-desc">${desc}</div>` : ''}
+        ${closedSourceNote}
         <div class="work-item-tags">${typeTag}${tags}</div>
     </div>`;
 }

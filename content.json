@@ -3,14 +3,14 @@
     "name": "Kalle Mäkelä",
     "description": "I'm a Ph.D. student building machine learning systems that decode brain activity from fNIRS signals. My work bridges signal processing, neural networks, and brain-computer interfaces, with a side hobby of making code that is actually usable by others."
   },
-  "papers": [
+  "items": [
     {
       "title": "NEMO: A Database for Emotion Analysis Using Functional Near-Infrared Spectroscopy",
       "doi": "10.1109/TAFFC.2023.3315971",
       "url": "https://doi.org/10.1109/TAFFC.2023.3315971",
       "meta": "IEEE Transactions on Affective Computing | 2024 | Journal article",
       "contributors": ["Michiel Spapé", "Kalle Mäkelä", "Tuukka Ruotsalo"],
-      "tags": ["fnirs", "neuroimaging", "BCI", "open source"],
+      "tags": ["paper", "fnirs", "neuroimaging", "BCI", "open source"],
       "thumbnail": "thumbnails/nemo.png",
       "links": {
         "github": "https://github.com/Cognitive-Computing-Group/NEMO"
@@ -22,22 +22,8 @@
       "url": "https://doi.org/10.1109/TAFFC.2023.3273916",
       "meta": "IEEE Transactions on Affective Computing | 2024-01 | Journal article",
       "contributors": ["Tuukka Ruotsalo", "Kalle Mäkelä", "Michiel Spapé"],
-      "tags": ["fnirs", "neuroimaging", "BCI"],
+      "tags": ["paper", "fnirs", "neuroimaging", "BCI"],
       "thumbnail": "thumbnails/crowdsourcing.png"
-    },
-    {
-      "title": "Feeling Positive? Predicting Emotional Image Similarity from Brain Signals",
-      "doi": "10.1145/3581783.3613442",
-      "url": "https://doi.org/10.1145/3581783.3613442",
-      "meta": "2023-10-26 | Conference paper",
-      "contributors": [
-        "Tuukka Ruotsalo",
-        "Kalle Mäkelä",
-        "Michiel M. Spapé",
-        "Luis A. Leiva"
-      ],
-      "thumbnail": "thumbnails/feeling-positive.png",
-      "tags": ["fnirs", "neuroimaging", "BCI"]
     },
     {
       "title": "Affective Relevance: Inferring Emotional Responses via fNIRS Neuroimaging",
@@ -51,48 +37,53 @@
         "Luis A. Leiva"
       ],
       "thumbnail": "thumbnails/affective-relevance.png",
-      "tags": ["fnirs", "neuroimaging", "BCI"]
-    }
-  ],
-  "projects": [
+      "tags": ["paper", "fnirs", "neuroimaging", "BCI"]
+    },
     {
-      "title": "jopvim",
-      "url": "https://github.com/kallemakela/jopvim",
-      "description": "Vim integration for Joplin",
-      "tags": ["lua", "vim"]
+      "title": "Feeling Positive? Predicting Emotional Image Similarity from Brain Signals",
+      "doi": "10.1145/3581783.3613442",
+      "url": "https://doi.org/10.1145/3581783.3613442",
+      "meta": "2023-10-26 | Conference paper",
+      "contributors": [
+        "Tuukka Ruotsalo",
+        "Kalle Mäkelä",
+        "Michiel M. Spapé",
+        "Luis A. Leiva"
+      ],
+      "thumbnail": "thumbnails/feeling-positive.png",
+      "tags": ["paper", "fnirs", "neuroimaging", "BCI"]
+    },
+    {
+      "title": "Causal Reasoning in Reinforcement Learning",
+      "url": "https://github.com/Kallemakela/causal-rl",
+      "description": "B.Sc. thesis project on using causal reasoning to improve reinforcement learning methods. Mostly theoretical work on multi-armed bandits.",
+      "thumbnail": "thumbnails/causal-rl.png",
+      "tags": ["project", "RL"]
     },
     {
       "title": "unogs",
       "url": "https://github.com/Kallemakela/unogs",
       "description": "Browser extension for unogs.com that adds watched titles tracking and watchlist functionality",
       "thumbnail": "thumbnails/unogs.mp4",
-      "tags": ["javascript", "browser extension"]
-    }
-  ],
-  "contributions": [
+      "tags": ["project", "javascript", "browser extension"]
+    },
+    {
+      "title": "jopvim",
+      "url": "https://github.com/kallemakela/jopvim",
+      "description": "Vim integration for Joplin",
+      "tags": ["project", "lua", "vim"]
+    },
     {
       "title": "mne-bids",
-      "url": "https://github.com/mne-tools/mne-bids",
+      "url": "https://github.com/mne-tools/mne-bids/pull/1466",
       "description": "Handle channel name mismatches between raw data and BIDS channels.tsv",
-      "links": [
-        {
-          "label": "PR #1466",
-          "url": "https://github.com/mne-tools/mne-bids/pull/1466"
-        }
-      ],
-      "tags": ["python", "fnirs", "neuroimaging"]
+      "tags": ["contribution", "python", "fnirs", "neuroimaging"]
     },
     {
       "title": "Joplin",
-      "url": "https://github.com/laurent22/joplin",
+      "url": "https://github.com/laurent22/joplin/pull/13675",
       "description": "Make mobile editor remember editing mode between sessions",
-      "links": [
-        {
-          "label": "PR #13675",
-          "url": "https://github.com/laurent22/joplin/pull/13675"
-        }
-      ],
-      "tags": ["javascript", "react", "react-native"]
+      "tags": ["contribution", "javascript", "react", "react-native"]
     }
   ]
 }

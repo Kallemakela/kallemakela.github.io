@@ -27,7 +27,7 @@
       "title": "mne-bids PR #1466",
       "url": "https://github.com/mne-tools/mne-bids/pull/1466",
       "description": "Handle channel name mismatches between raw data and BIDS channels.tsv",
-      "tags": ["contribution", "python", "fnirs", "neuroimaging", "python"]
+      "tags": ["contribution", "fnirs", "neuroimaging", "python"]
     },
     {
       "title": "Diffusion Planning",

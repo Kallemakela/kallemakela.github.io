@@ -10,11 +10,30 @@
       "url": "https://doi.org/10.1109/TAFFC.2023.3315971",
       "meta": "IEEE Transactions on Affective Computing | 2024 | Journal article",
       "contributors": ["Michiel Spapé", "Kalle Mäkelä", "Tuukka Ruotsalo"],
-      "tags": ["paper", "fnirs", "neuroimaging", "BCI", "open source"],
+      "tags": [
+        "paper",
+        "fnirs",
+        "neuroimaging",
+        "BCI",
+        "open source",
+        "python"
+      ],
       "thumbnail": "thumbnails/nemo.png",
       "links": {
         "github": "https://github.com/Cognitive-Computing-Group/NEMO"
       }
+    },
+    {
+      "title": "mne-bids PR #1466",
+      "url": "https://github.com/mne-tools/mne-bids/pull/1466",
+      "description": "Handle channel name mismatches between raw data and BIDS channels.tsv",
+      "tags": ["contribution", "python", "fnirs", "neuroimaging", "python"]
+    },
+    {
+      "title": "Diffusion Planning",
+      "description": "Using diffusion models to create plans in RL grid-world environments given the initial state and a natural language instruction, such as 'move the ball to the circle'. Diffusion is much faster than decision-transformers since it's not autoregressive, with slightly worse performance.",
+      "thumbnail": "thumbnails/diffusion-planning.png",
+      "tags": ["project", "RL", "diffusion", "closed source", "python"]
     },
     {
       "title": "Crowdsourcing Affective Annotations Via fNIRS-BCI",
@@ -22,8 +41,14 @@
       "url": "https://doi.org/10.1109/TAFFC.2023.3273916",
       "meta": "IEEE Transactions on Affective Computing | 2024-01 | Journal article",
       "contributors": ["Tuukka Ruotsalo", "Kalle Mäkelä", "Michiel Spapé"],
-      "tags": ["paper", "fnirs", "neuroimaging", "BCI"],
+      "tags": ["paper", "fnirs", "neuroimaging", "BCI", "python"],
       "thumbnail": "thumbnails/crowdsourcing.png"
+    },
+    {
+      "title": "Joplin PR #13675",
+      "url": "https://github.com/laurent22/joplin/pull/13675",
+      "description": "Make mobile editor remember editing mode between sessions",
+      "tags": ["contribution", "javascript", "react", "react-native"]
     },
     {
       "title": "Affective Relevance: Inferring Emotional Responses via fNIRS Neuroimaging",
@@ -37,7 +62,7 @@
         "Luis A. Leiva"
       ],
       "thumbnail": "thumbnails/affective-relevance.png",
-      "tags": ["paper", "fnirs", "neuroimaging", "BCI"]
+      "tags": ["paper", "fnirs", "neuroimaging", "BCI", "python"]
     },
     {
       "title": "Feeling Positive? Predicting Emotional Image Similarity from Brain Signals",
@@ -51,19 +76,7 @@
         "Luis A. Leiva"
       ],
       "thumbnail": "thumbnails/feeling-positive.png",
-      "tags": ["paper", "fnirs", "neuroimaging", "BCI"]
-    },
-    {
-      "title": "mne-bids PR #1466",
-      "url": "https://github.com/mne-tools/mne-bids/pull/1466",
-      "description": "Handle channel name mismatches between raw data and BIDS channels.tsv",
-      "tags": ["contribution", "python", "fnirs", "neuroimaging"]
-    },
-    {
-      "title": "Joplin PR #13675",
-      "url": "https://github.com/laurent22/joplin/pull/13675",
-      "description": "Make mobile editor remember editing mode between sessions",
-      "tags": ["contribution", "javascript", "react", "react-native"]
+      "tags": ["paper", "fnirs", "neuroimaging", "BCI", "python"]
     },
     {
       "title": "Causal Reasoning in Reinforcement Learning",
@@ -71,6 +84,11 @@
       "description": "B.Sc. thesis project on using causal reasoning to improve reinforcement learning methods. Mostly theoretical work on multi-armed bandits.",
       "thumbnail": "thumbnails/causal-rl.png",
       "tags": ["project", "RL"]
+    },
+    {
+      "title": "More Informative Group Relative Advantage Losses",
+      "description": "Research on improving Group Relative Policy Optimization (GRPO) by extracting more value from the reward distribution across multiple policy runs. Experiments compare performance to GRPO and PPO in classification environments, showing promising proof-of-concept results.",
+      "tags": ["project", "RL", "closed source", "python"]
     },
     {
       "title": "unogs",

@@ -1,9 +1,14 @@
+let currentFilter = 'all';
+let allItems = [];
+
 document.addEventListener('DOMContentLoaded', async function() {
     const content = await loadContent();
     if (!content) return;
 
+    allItems = content.items;
     renderBio(content.bio);
-    renderWork(content.items);
+    renderWork(allItems);
+    setupFilters();
 });
 
 async function loadContent() {
@@ -24,12 +29,29 @@ function renderBio(bio) {
 
 function renderWork(items) {
     const container = document.getElementById('work-container');
-    container.innerHTML = items.map(item => createWorkItemHTML(item)).join('');
+    const filteredItems = currentFilter === 'all' 
+        ? items 
+        : items.filter(item => item.tags?.includes(currentFilter));
+    
+    container.innerHTML = filteredItems.map(item => createWorkItemHTML(item)).join('');
     
     container.querySelectorAll('.work-item').forEach((el, index) => {
         el.addEventListener('click', (e) => {
             if (e.target.closest('a, button')) return;
-            window.open(items[index].url, '_blank');
+            const url = filteredItems[index].url;
+            if (url) window.open(url, '_blank');
+        });
+    });
+}
+
+function setupFilters() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentFilter = btn.dataset.filter;
+            renderWork(allItems);
         });
     });
 }
@@ -71,10 +93,15 @@ function createWorkItemHTML(item) {
 
     const thumbnailHTML = createThumbnailHTML(item.thumbnail);
 
-    const titleLink = `<a href="${item.url}" class="work-item-title-link" target="_blank">${escapeHtml(item.title)}</a>`;
+    const titleLink = item.url 
+        ? `<a href="${item.url}" class="work-item-title-link" target="_blank">${escapeHtml(item.title)}</a>`
+        : `<span class="work-item-title-text">${escapeHtml(item.title)}</span>`;
+    const thumbnailLink = item.url && thumbnailHTML
+        ? `<a href="${item.url}" class="work-item-thumbnail-link" target="_blank">${thumbnailHTML}</a>`
+        : thumbnailHTML;
     
-    return `<div class="work-item">
-        <a href="${item.url}" class="work-item-thumbnail-link" target="_blank">${thumbnailHTML}</a>
+    return `<div class="work-item ${item.url ? 'has-url' : ''}">
+        ${thumbnailLink}
         <div class="work-item-title">${titleLink}</div>
         ${subtitle ? `<div class="work-item-subtitle">${subtitle}</div>` : ''}
         ${linkButton ? `<div class="work-item-links">${linkButton}</div>` : ''}

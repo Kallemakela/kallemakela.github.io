@@ -42,6 +42,7 @@ body::before {
     left: 0;
     right: 0;
     height: 2px;
+    pointer-events: none;
 }
 
 section {
@@ -109,9 +110,13 @@ section {
     padding: 1.25rem;
     text-decoration: none;
     color: inherit;
-    cursor: pointer;
+    cursor: default;
     transition: background 0.15s ease;
     border-left: 3px solid transparent;
+}
+
+.work-item.has-url {
+    cursor: pointer;
 }
 
 .work-item:hover {
@@ -221,6 +226,49 @@ section {
 }
 
 .tag-type-contribution {
+    border-color: #957FB8;
+    color: #957FB8;
+}
+
+.filter-container {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #363646;
+    background: transparent;
+    color: #727169;
+    font-family: inherit;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.filter-btn:hover {
+    border-color: #7E9CD8;
+    color: #7E9CD8;
+}
+
+.filter-btn.active[data-filter="all"] {
+    border-color: #7E9CD8;
+    color: #7E9CD8;
+}
+
+.filter-btn.active[data-filter="paper"] {
+    border-color: #E46876;
+    color: #E46876;
+}
+
+.filter-btn.active[data-filter="project"] {
+    border-color: #7FB4CA;
+    color: #7FB4CA;
+}
+
+.filter-btn.active[data-filter="contribution"] {
     border-color: #957FB8;
     color: #957FB8;
 }

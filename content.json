@@ -6,10 +6,9 @@
   "items": [
     {
       "title": "NEMO: A Database for Emotion Analysis Using Functional Near-Infrared Spectroscopy",
-      "doi": "10.1109/TAFFC.2023.3315971",
       "url": "https://doi.org/10.1109/TAFFC.2023.3315971",
-      "meta": "IEEE Transactions on Affective Computing | 2024 | Journal article",
-      "contributors": ["Michiel Spapé", "Kalle Mäkelä", "Tuukka Ruotsalo"],
+      "subtitle": "IEEE Transactions on Affective Computing | 2024 | Journal article",
+      "description": ["Michiel Spapé, Kalle Mäkelä, Tuukka Ruotsalo"],
       "tags": [
         "paper",
         "fnirs",
@@ -20,61 +19,56 @@
       ],
       "thumbnail": "thumbnails/nemo.png",
       "links": {
-        "github": "https://github.com/Cognitive-Computing-Group/NEMO"
+        "GitHub": "https://github.com/Cognitive-Computing-Group/NEMO"
       }
     },
     {
       "title": "mne-bids PR #1466",
       "url": "https://github.com/mne-tools/mne-bids/pull/1466",
       "description": "Handle channel name mismatches between raw data and BIDS channels.tsv",
-      "tags": ["contribution", "fnirs", "neuroimaging", "python"]
+      "tags": ["contribution", "fnirs", "neuroimaging", "ML", "python"]
     },
     {
       "title": "Diffusion Planning",
       "url": "https://github.com/Kallemakela/diffusion-planning/blob/main/Diffusion-planning-for-grounded-language-learning.pdf",
       "description": "Using diffusion models to create plans in RL grid-world environments given the initial state and a natural language instruction, such as 'move the ball to the circle'. Diffusion is much faster than decision-transformers since it's not autoregressive, with slightly worse performance.",
       "thumbnail": "thumbnails/diffusion-planning.png",
-      "tags": ["project", "RL", "diffusion", "python"]
+      "tags": ["project", "RL", "diffusion", "ML", "python"]
     },
     {
       "title": "Crowdsourcing Affective Annotations Via fNIRS-BCI",
-      "doi": "10.1109/TAFFC.2023.3273916",
       "url": "https://doi.org/10.1109/TAFFC.2023.3273916",
-      "meta": "IEEE Transactions on Affective Computing | 2024-01 | Journal article",
-      "contributors": ["Tuukka Ruotsalo", "Kalle Mäkelä", "Michiel Spapé"],
+      "subtitle": "IEEE Transactions on Affective Computing | 2024-01 | Journal article",
+      "description": ["Tuukka Ruotsalo, Kalle Mäkelä, Michiel Spapé"],
       "tags": ["paper", "fnirs", "neuroimaging", "BCI", "python"],
       "thumbnail": "thumbnails/crowdsourcing.png"
     },
     {
-      "title": "Joplin PR #13675",
+      "title": "Joplin PR #13675, PR #14363",
       "url": "https://github.com/laurent22/joplin/pull/13675",
-      "description": "Make mobile editor remember editing mode between sessions",
+      "description": "Make mobile editor remember editing mode between sessions. Most of the changes are in the first PR, second PR has squahed first PR commits and added minor improvements.",
+      "links": {
+        "PR#13675": "https://github.com/laurent22/joplin/pull/13675",
+        "PR#14363": "https://github.com/laurent22/joplin/pull/14363"
+      },
       "tags": ["contribution", "javascript", "react", "react-native"]
     },
     {
       "title": "Affective Relevance: Inferring Emotional Responses via fNIRS Neuroimaging",
-      "doi": "10.1145/3539618.3591946",
       "url": "https://doi.org/10.1145/3539618.3591946",
-      "meta": "2023-07-19 | Conference paper",
-      "contributors": [
-        "Tuukka Ruotsalo",
-        "Kalle Mäkelä",
-        "Michiel M. Spapé",
-        "Luis A. Leiva"
+      "subtitle": "2023-07-19 | Conference paper",
+      "description": [
+        "Tuukka Ruotsalo, Kalle Mäkelä, Michiel M. Spapé, Luis A. Leiva"
       ],
       "thumbnail": "thumbnails/affective-relevance.png",
       "tags": ["paper", "fnirs", "neuroimaging", "BCI", "python"]
     },
     {
       "title": "Feeling Positive? Predicting Emotional Image Similarity from Brain Signals",
-      "doi": "10.1145/3581783.3613442",
       "url": "https://doi.org/10.1145/3581783.3613442",
-      "meta": "2023-10-26 | Conference paper",
-      "contributors": [
-        "Tuukka Ruotsalo",
-        "Kalle Mäkelä",
-        "Michiel M. Spapé",
-        "Luis A. Leiva"
+      "subtitle": "2023-10-26 | Conference paper",
+      "description": [
+        "Tuukka Ruotsalo, Kalle Mäkelä, Michiel M. Spapé, Luis A. Leiva"
       ],
       "thumbnail": "thumbnails/feeling-positive.png",
       "tags": ["paper", "fnirs", "neuroimaging", "BCI", "python"]
@@ -92,17 +86,56 @@
       "tags": ["project", "RL", "closed source", "python"]
     },
     {
+      "title": "Feedbacker-Forum",
+      "url": "https://github.com/ktk-2005/Feedbacker-Forum",
+      "description": "Feedbacker-Forum deploys (almost) any web application via docker, while injecting an interactive interface on top of the application for collecting feedback from designers. Support selecting DOM elements, creating quizzes, fast css modifications etc.",
+      "thumbnail": "thumbnails/feedbacker-forum.png",
+      "tags": ["project", "javascript"]
+    },
+    {
+      "title": "GNN Sudoku solver",
+      "url": "https://github.com/Kallemakela/gnn-sudoku",
+      "description": "A Sudoku solver implemented using a Graph Neural Network based on Recurrent Relational Networks (Palm et al., 2018).",
+      "tags": ["mini-project", "python", "ML"]
+    },
+    {
       "title": "unogs",
       "url": "https://github.com/Kallemakela/unogs",
       "description": "Browser extension for unogs.com that adds watched titles tracking and watchlist functionality",
       "thumbnail": "thumbnails/unogs.mp4",
-      "tags": ["project", "javascript", "browser extension"]
+      "tags": ["mini-project", "javascript", "browser extension"]
     },
     {
       "title": "jopvim",
       "url": "https://github.com/kallemakela/jopvim",
       "description": "Vim integration for Joplin",
-      "tags": ["project", "lua", "vim"]
+      "tags": ["project", "lua"]
+    },
+    {
+      "title": "Nested Cross-Val-Test for Scikit-learn & PyTorch Lightning",
+      "url": "https://github.com/Kallemakela/nestedCVT",
+      "description": "Performs nested cross-val-test evaluation for any Scikit-learn or PyTorch Lightning model.",
+      "thumbnail": "thumbnails/nested-cvt.jpg",
+      "tags": ["mini-project", "python", "ML"]
+    },
+    {
+      "title": "MTS to MP4 Converter",
+      "url": "https://github.com/Kallemakela/MTS2MP4",
+      "description": "Automatic bulk MTS to MP4 Converter.",
+      "tags": ["mini-project", "shell"]
+    },
+    {
+      "title": "Contrastive learning embedding classification experiment",
+      "url": "https://github.com/Kallemakela/mnist_contrastive",
+      "description": "A contrastive learning experiment using triplet loss to learn embeddings from MNIST data, t-SNE visualization and embedding classification with classic ML methods.",
+      "thumbnail": "thumbnails/mnist-contrastive.jpg",
+      "tags": ["mini-project", "python", "ML"]
+    },
+    {
+      "title": "Ensembling from CV folds",
+      "url": "https://github.com/Kallemakela/Ensembling-from-CV-folds",
+      "description": "Instead of refitting on entire train set after cross-validation, we use the already fitted models as an ensemble for test time prediction.",
+      "tags": ["mini-project", "python", "ML"]
     }
   ]
 }

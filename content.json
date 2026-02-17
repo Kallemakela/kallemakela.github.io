@@ -128,7 +128,7 @@
       "title": "Contrastive learning embedding classification experiment",
       "url": "https://github.com/Kallemakela/mnist_contrastive",
       "description": "A contrastive learning experiment using triplet loss to learn embeddings from MNIST data, t-SNE visualization and embedding classification with classic ML methods.",
-      "thumbnail": "thumbnails/mnist-contrastive.jpg",
+      "thumbnail": "thumbnails/mnist-contrastive.png",
       "tags": ["mini-project", "python", "ML"]
     },
     {

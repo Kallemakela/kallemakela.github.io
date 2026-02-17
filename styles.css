@@ -215,17 +215,17 @@ section {
     background: transparent;
 }
 
-.tag-type-paper {
+.tag-paper {
     border-color: #E46876;
     color: #E46876;
 }
 
-.tag-type-project {
+.tag-project {
     border-color: #7FB4CA;
     color: #7FB4CA;
 }
 
-.tag-type-contribution {
+.tag-contribution {
     border-color: #957FB8;
     color: #957FB8;
 }
@@ -253,6 +253,26 @@ section {
     color: #7E9CD8;
 }
 
+.filter-btn[data-filter="paper"]:hover {
+    border-color: #E46876;
+    color: #E46876;
+}
+
+.filter-btn[data-filter="project"]:hover {
+    border-color: #7FB4CA;
+    color: #7FB4CA;
+}
+
+.filter-btn[data-filter="contribution"]:hover {
+    border-color: #957FB8;
+    color: #957FB8;
+}
+
+.filter-btn[data-filter="mini-project"]:hover {
+    border-color: #98BB6C;
+    color: #98BB6C;
+}
+
 .filter-btn.active[data-filter="all"] {
     border-color: #7E9CD8;
     color: #7E9CD8;
@@ -271,6 +291,11 @@ section {
 .filter-btn.active[data-filter="contribution"] {
     border-color: #957FB8;
     color: #957FB8;
+}
+
+.filter-btn.active[data-filter="mini-project"] {
+    border-color: #98BB6C;
+    color: #98BB6C;
 }
 
 .tag-nirs {
@@ -331,6 +356,44 @@ section {
 .tag-react-native {
     border-color: #7FB4CA;
     color: #7FB4CA;
+}
+
+.tag-ML {
+    border-color: #E46876;
+    color: #E46876;
+}
+
+.tag-RL {
+    border-color: #957FB8;
+    color: #957FB8;
+}
+
+.tag-diffusion {
+    border-color: #DCA561;
+    color: #DCA561;
+}
+
+.tag-shell {
+    border-color: #98BB6C;
+    color: #98BB6C;
+}
+
+.tag-closed-source {
+    border-color: #727169;
+    color: #727169;
+}
+
+.tag-mini-project {
+    border-color: #98BB6C;
+    color: #98BB6C;
+}
+
+.work-item-closed-source {
+    font-size: 0.8rem;
+    color: #727169;
+    font-style: italic;
+    margin-top: 0.5rem;
+    padding: 0.3rem 0;
 }
 
 @media (max-width: 768px) {

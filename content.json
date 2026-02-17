@@ -9,14 +9,7 @@
       "url": "https://doi.org/10.1109/TAFFC.2023.3315971",
       "subtitle": "IEEE Transactions on Affective Computing | 2024 | Journal article",
       "description": ["Michiel Spapé, Kalle Mäkelä, Tuukka Ruotsalo"],
-      "tags": [
-        "paper",
-        "fnirs",
-        "neuroimaging",
-        "BCI",
-        "open source",
-        "python"
-      ],
+      "tags": ["paper", "neuroimaging", "ML", "python"],
       "thumbnail": "thumbnails/nemo.png",
       "links": {
         "GitHub": "https://github.com/Cognitive-Computing-Group/NEMO"
@@ -26,21 +19,21 @@
       "title": "mne-bids PR #1466",
       "url": "https://github.com/mne-tools/mne-bids/pull/1466",
       "description": "Handle channel name mismatches between raw data and BIDS channels.tsv",
-      "tags": ["contribution", "fnirs", "neuroimaging", "ML", "python"]
+      "tags": ["contribution", "neuroimaging", "ML", "python"]
     },
     {
       "title": "Diffusion Planning",
       "url": "https://github.com/Kallemakela/diffusion-planning/blob/main/Diffusion-planning-for-grounded-language-learning.pdf",
       "description": "Using diffusion models to create plans in RL grid-world environments given the initial state and a natural language instruction, such as 'move the ball to the circle'. Diffusion is much faster than decision-transformers since it's not autoregressive, with slightly worse performance.",
       "thumbnail": "thumbnails/diffusion-planning.png",
-      "tags": ["project", "RL", "diffusion", "ML", "python"]
+      "tags": ["project", "RL", "ML", "python"]
     },
     {
       "title": "Crowdsourcing Affective Annotations Via fNIRS-BCI",
       "url": "https://doi.org/10.1109/TAFFC.2023.3273916",
       "subtitle": "IEEE Transactions on Affective Computing | 2024-01 | Journal article",
       "description": ["Tuukka Ruotsalo, Kalle Mäkelä, Michiel Spapé"],
-      "tags": ["paper", "fnirs", "neuroimaging", "BCI", "python"],
+      "tags": ["paper", "neuroimaging", "ML", "python"],
       "thumbnail": "thumbnails/crowdsourcing.png"
     },
     {
@@ -61,7 +54,7 @@
         "Tuukka Ruotsalo, Kalle Mäkelä, Michiel M. Spapé, Luis A. Leiva"
       ],
       "thumbnail": "thumbnails/affective-relevance.png",
-      "tags": ["paper", "fnirs", "neuroimaging", "BCI", "python"]
+      "tags": ["paper", "neuroimaging", "ML", "python"]
     },
     {
       "title": "Feeling Positive? Predicting Emotional Image Similarity from Brain Signals",
@@ -71,19 +64,19 @@
         "Tuukka Ruotsalo, Kalle Mäkelä, Michiel M. Spapé, Luis A. Leiva"
       ],
       "thumbnail": "thumbnails/feeling-positive.png",
-      "tags": ["paper", "fnirs", "neuroimaging", "BCI", "python"]
+      "tags": ["paper", "neuroimaging", "ML", "python"]
     },
     {
       "title": "Causal Reasoning in Reinforcement Learning",
       "url": "https://github.com/Kallemakela/causal-rl",
       "description": "B.Sc. thesis project on using causal reasoning to improve reinforcement learning methods. Mostly theoretical work on multi-armed bandits.",
       "thumbnail": "thumbnails/causal-rl.png",
-      "tags": ["project", "RL"]
+      "tags": ["project", "RL", "ML"] 
     },
     {
       "title": "More Informative Group Relative Advantage Losses",
       "description": "Research on improving Group Relative Policy Optimization (GRPO) by extracting more value from the reward distribution across multiple policy runs. Experiments compare performance to GRPO and PPO in classification environments, showing promising proof-of-concept results.",
-      "tags": ["project", "RL", "closed source", "python"]
+      "tags": ["project", "RL", "closed-source", "python"]
     },
     {
       "title": "Feedbacker-Forum",
@@ -103,7 +96,7 @@
       "url": "https://github.com/Kallemakela/unogs",
       "description": "Browser extension for unogs.com that adds watched titles tracking and watchlist functionality",
       "thumbnail": "thumbnails/unogs.mp4",
-      "tags": ["mini-project", "javascript", "browser extension"]
+      "tags": ["mini-project", "javascript", "browser-extension"]
     },
     {
       "title": "jopvim",

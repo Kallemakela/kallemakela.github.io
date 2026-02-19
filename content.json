@@ -151,12 +151,43 @@
        "description": "Large scale image VAE with reconstruction and perception loss.",
        "tags": ["mini-project", "ML", "python"]
      },
-     {
-       "title": "subsampling_significance_tests",
-       "url": "https://github.com/Kallemakela/subsampling_significance_tests",
-       "description": "Implementation and analysis of statistical tests for comparing the performance of machine learning models using resampling methods, such as repeated cross-validation.",
-       "thumbnail": "thumbnails/subsampling-tests.png",
-       "tags": ["mini-project", "ML", "python"]
-     }
-   ]
+      {
+        "title": "subsampling_significance_tests",
+        "url": "https://github.com/Kallemakela/subsampling_significance_tests",
+        "description": "Implementation and analysis of statistical tests for comparing the performance of machine learning models using resampling methods, such as repeated cross-validation.",
+        "thumbnail": "thumbnails/subsampling-tests.png",
+        "tags": ["mini-project", "ML", "python"]
+      },
+      {
+        "title": "Mobile PDF Reflow Viewer",
+        "url": "https://github.com/Kallemakela/mobpdf",
+        "description": "Simple pdf reflow tool for reading PDFs on mobile without acrobat reader.",
+        "tags": ["mini-project", "javascript"]
+      },
+      {
+        "title": "Subsampling CIs",
+        "url": "https://github.com/Kallemakela/subsampling-CIs",
+        "description": "Research on subsampling bootstrap methods for constructing confidence intervals, comparing standard bootstrap with subsampling and MOON (M-out-of-N) bootstrap. Also testing a bias correction method for subsampling.",
+        "thumbnail": "thumbnails/subsampling-cis.png",
+        "tags": ["mini-project", "python", "ML"]
+      },
+      {
+        "title": "Classification Bad Examples",
+        "url": "https://github.com/Kallemakela/classification_bad_examples",
+        "description": "Shows how small datasets + noisy data + LOO-CV can lead to unexpected information leakage even with valid train-test splits.",
+        "tags": ["mini-project", "python", "ML"]
+      },
+      {
+        "title": "Custom CV",
+        "url": "https://github.com/Kallemakela/customCV",
+        "description": "Additional cross-validation iterators for scikit-learn. Useful for group CV that require a lot of folds and repetitions due to high variance in validation and test scores (usually due to small dataset size).",
+        "tags": ["mini-project", "python", "ML"]
+      },
+      {
+        "title": "SKUtils",
+        "url": "https://github.com/Kallemakela/SKUtils",
+        "description": "Additional scikit-learn utilities. Includes e.g. StandardScalerND, which extends scikit-learn StandardScaler to work on multi-dimensional data, enabling easy DL model integration with scikit-learn Pipeline.",
+        "tags": ["mini-project", "python", "ML"]
+      }
+    ]
 }

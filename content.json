@@ -22,6 +22,14 @@
       "tags": ["contribution", "neuroimaging", "ML", "python"]
     },
     {
+      "title": "Machine Learning Approaches to fNIRS-Based Emotion Recognition",
+      "url": "https://aaltodoc.aalto.fi/items/ec4ea4a7-da75-4651-bfa7-7637c8ee2183",
+      "subtitle": "M.Sc. thesis",
+      "description": "Compares deep learning and classical ML for fNIRS-based emotion recognition, with thorough cross-validation and hyperparameter selection for noisy low-signal data. Supervisor: Stephane Deny. Advisor: Tuukka Ruotsalo.",
+      "thumbnail": "thumbnails/msc-thesis.png",
+      "tags": ["project", "neuroimaging", "ML", "python"]
+    },
+    {
       "title": "Diffusion Planning",
       "url": "https://github.com/Kallemakela/diffusion-planning/blob/main/Diffusion-planning-for-grounded-language-learning.pdf",
       "description": "Using diffusion models to create plans in RL grid-world environments given the initial state and a natural language instruction, such as 'move the ball to the circle'. Diffusion is much faster than decision-transformers since it's not autoregressive, with slightly worse performance.",
@@ -72,6 +80,34 @@
       "description": "B.Sc. thesis project on using causal reasoning to improve reinforcement learning methods. Mostly theoretical work on multi-armed bandits.",
       "thumbnail": "thumbnails/causal-rl.png",
       "tags": ["project", "RL", "ML"]
+    },
+    {
+      "title": "fastfnirs",
+      "url": "https://github.com/Kallemakela/fastfnirs",
+      "description": "Very high-level package for parsing, preprocessing, visualizing and classifying fNIRS data.",
+      "thumbnail": "thumbnails/fastfnirs.png",
+      "tags": ["mini-project", "neuroimaging", "python"]
+    },
+    {
+      "title": "REINFORCE vs PPO from Scratch",
+      "url": "https://github.com/Kallemakela/REINFORCE_vs_PPO_from_scratch",
+      "description": "PPO and REINFORCE implementations without RL libraries.",
+      "thumbnail": "thumbnails/reinforce-vs-ppo-scratch.png",
+      "tags": ["mini-project", "RL", "ML", "python"]
+    },
+    {
+      "title": "Visualizing RL Loss Functions",
+      "url": "https://github.com/Kallemakela/RL_loss_viz",
+      "description": "Building visual intuition for complex RL loss functions, e.g. PPO with many variables and clipping.",
+      "thumbnail": "thumbnails/viz-rl-losses.png",
+      "tags": ["mini-project", "RL", "ML", "python"]
+    },
+    {
+      "title": "Kullback-Leibler Divergence Visualization",
+      "url": "https://github.com/Kallemakela/KL_divergence_viz",
+      "description": "Kullback-Leibler Divergence visualization with how much each point contributes to the divergence.",
+      "thumbnail": "thumbnails/viz-kl.png",
+      "tags": ["mini-project", "ML", "python"]
     },
     {
       "title": "More Informative Group Relative Advantage Losses",
@@ -126,68 +162,68 @@
       "thumbnail": "thumbnails/mnist-contrastive.png",
       "tags": ["mini-project", "python", "ML"]
     },
-     {
-       "title": "Ensembling from CV folds",
-       "url": "https://github.com/Kallemakela/Ensembling-from-CV-folds",
-       "description": "Instead of refitting on entire train set after cross-validation, we use the already fitted models as an ensemble for test time prediction.",
-       "tags": ["mini-project", "python", "ML"]
-     },
-     {
-       "title": "Iterative Behaviour Cloning",
-       "url": "https://github.com/Kallemakela/iterative_BC",
-       "description": "Collect data, filter rollouts based on a condition, train a model on the filtered data, repeat. Funny baseline method for RL experiments that works surprisingly well.",
-       "tags": ["mini-project", "RL", "ML", "python"]
-     },
-     {
-       "title": "Behavioral Cloning Experiments",
-       "url": "https://github.com/Kallemakela/behaviour_cloning",
-       "description": "Compares pure behavioral cloning (BC), behavioral cloning with critic pretraining (CAC), and PPO baseline on the CarRacing-v3 environment. Includes class activation maps and ablations on frame stacking.",
-       "thumbnail": "thumbnails/bc.png",
-       "tags": ["mini-project", "RL", "ML", "python"]
-     },
-     {
-       "title": "Perception loss VAE",
-       "url": "https://github.com/Kallemakela/vae_img/tree/perception-loss",
-       "description": "Large scale image VAE with reconstruction and perception loss.",
-       "tags": ["mini-project", "ML", "python"]
-     },
-      {
-        "title": "subsampling_significance_tests",
-        "url": "https://github.com/Kallemakela/subsampling_significance_tests",
-        "description": "Implementation and analysis of statistical tests for comparing the performance of machine learning models using resampling methods, such as repeated cross-validation.",
-        "thumbnail": "thumbnails/subsampling-tests.png",
-        "tags": ["mini-project", "ML", "python"]
-      },
-      {
-        "title": "Mobile PDF Reflow Viewer",
-        "url": "https://github.com/Kallemakela/mobpdf",
-        "description": "Simple pdf reflow tool for reading PDFs on mobile without acrobat reader.",
-        "tags": ["mini-project", "javascript"]
-      },
-      {
-        "title": "Subsampling CIs",
-        "url": "https://github.com/Kallemakela/subsampling-CIs",
-        "description": "Research on subsampling bootstrap methods for constructing confidence intervals, comparing standard bootstrap with subsampling and MOON (M-out-of-N) bootstrap. Also testing a bias correction method for subsampling.",
-        "thumbnail": "thumbnails/subsampling-cis.png",
-        "tags": ["mini-project", "python", "ML"]
-      },
-      {
-        "title": "Classification Bad Examples",
-        "url": "https://github.com/Kallemakela/classification_bad_examples",
-        "description": "Shows how small datasets + noisy data + LOO-CV can lead to unexpected information leakage even with valid train-test splits.",
-        "tags": ["mini-project", "python", "ML"]
-      },
-      {
-        "title": "Custom CV",
-        "url": "https://github.com/Kallemakela/customCV",
-        "description": "Additional cross-validation iterators for scikit-learn. Useful for group CV that require a lot of folds and repetitions due to high variance in validation and test scores (usually due to small dataset size).",
-        "tags": ["mini-project", "python", "ML"]
-      },
-      {
-        "title": "SKUtils",
-        "url": "https://github.com/Kallemakela/SKUtils",
-        "description": "Additional scikit-learn utilities. Includes e.g. StandardScalerND, which extends scikit-learn StandardScaler to work on multi-dimensional data, enabling easy DL model integration with scikit-learn Pipeline.",
-        "tags": ["mini-project", "python", "ML"]
-      }
-    ]
+    {
+      "title": "Ensembling from CV folds",
+      "url": "https://github.com/Kallemakela/Ensembling-from-CV-folds",
+      "description": "Instead of refitting on entire train set after cross-validation, we use the already fitted models as an ensemble for test time prediction.",
+      "tags": ["mini-project", "python", "ML"]
+    },
+    {
+      "title": "Iterative Behaviour Cloning",
+      "url": "https://github.com/Kallemakela/iterative_BC",
+      "description": "Collect data, filter rollouts based on a condition, train a model on the filtered data, repeat. Funny baseline method for RL experiments that works surprisingly well.",
+      "tags": ["mini-project", "RL", "ML", "python"]
+    },
+    {
+      "title": "Behavioral Cloning Experiments",
+      "url": "https://github.com/Kallemakela/behaviour_cloning",
+      "description": "Compares pure behavioral cloning (BC), behavioral cloning with critic pretraining (CAC), and PPO baseline on the CarRacing-v3 environment. Includes class activation maps and ablations on frame stacking.",
+      "thumbnail": "thumbnails/bc.png",
+      "tags": ["mini-project", "RL", "ML", "python"]
+    },
+    {
+      "title": "Perception loss VAE",
+      "url": "https://github.com/Kallemakela/vae_img/tree/perception-loss",
+      "description": "Large scale image VAE with reconstruction and perception loss.",
+      "tags": ["mini-project", "ML", "python"]
+    },
+    {
+      "title": "subsampling_significance_tests",
+      "url": "https://github.com/Kallemakela/subsampling_significance_tests",
+      "description": "Implementation and analysis of statistical tests for comparing the performance of machine learning models using resampling methods, such as repeated cross-validation.",
+      "thumbnail": "thumbnails/subsampling-tests.png",
+      "tags": ["mini-project", "ML", "python"]
+    },
+    {
+      "title": "Mobile PDF Reflow Viewer",
+      "url": "https://github.com/Kallemakela/mobpdf",
+      "description": "Simple pdf reflow tool for reading PDFs on mobile without acrobat reader.",
+      "tags": ["mini-project", "javascript"]
+    },
+    {
+      "title": "Subsampling CIs",
+      "url": "https://github.com/Kallemakela/subsampling-CIs",
+      "description": "Research on subsampling bootstrap methods for constructing confidence intervals, comparing standard bootstrap with subsampling and MOON (M-out-of-N) bootstrap. Also testing a bias correction method for subsampling.",
+      "thumbnail": "thumbnails/subsampling-cis.png",
+      "tags": ["mini-project", "python", "ML"]
+    },
+    {
+      "title": "Classification Bad Examples",
+      "url": "https://github.com/Kallemakela/classification_bad_examples",
+      "description": "Shows how small datasets + noisy data + LOO-CV can lead to unexpected information leakage even with valid train-test splits.",
+      "tags": ["mini-project", "python", "ML"]
+    },
+    {
+      "title": "Custom CV",
+      "url": "https://github.com/Kallemakela/customCV",
+      "description": "Additional cross-validation iterators for scikit-learn. Useful for group CV that require a lot of folds and repetitions due to high variance in validation and test scores (usually due to small dataset size).",
+      "tags": ["mini-project", "python", "ML"]
+    },
+    {
+      "title": "SKUtils",
+      "url": "https://github.com/Kallemakela/SKUtils",
+      "description": "Additional scikit-learn utilities. Includes e.g. StandardScalerND, which extends scikit-learn StandardScaler to work on multi-dimensional data, enabling easy DL model integration with scikit-learn Pipeline.",
+      "tags": ["mini-project", "python", "ML"]
+    }
+  ]
 }

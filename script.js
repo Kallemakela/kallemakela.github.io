@@ -1,4 +1,4 @@
-let currentFilter = "all";
+let currentFilters = new Set();
 let allItems = [];
 
 document.addEventListener("DOMContentLoaded", async function () {
@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   allItems = content.items;
   renderBio(content.bio);
-  renderWork(allItems);
+  currentFilters = filtersFromURL();
   setupFilters();
+  renderWork(allItems);
 });
 
 async function loadContent() {
@@ -22,6 +23,19 @@ async function loadContent() {
   }
 }
 
+function filtersFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  const tags = params.get("tags");
+  return tags ? new Set(tags.split(",").filter(Boolean)) : new Set();
+}
+
+function filtersToURL(filters) {
+  const params = new URLSearchParams();
+  if (filters.size > 0) params.set("tags", [...filters].join(","));
+  const query = params.toString();
+  history.replaceState(null, "", query ? `?${query}` : window.location.pathname);
+}
+
 function renderBio(bio) {
   document.getElementById("bio-name").innerHTML =
     `<strong>${escapeHtml(bio.name)}</strong>`;
@@ -31,9 +45,11 @@ function renderBio(bio) {
 function renderWork(items) {
   const container = document.getElementById("work-container");
   const filteredItems =
-    currentFilter === "all"
+    currentFilters.size === 0
       ? items
-      : items.filter((item) => item.tags?.includes(currentFilter));
+      : items.filter((item) =>
+          [...currentFilters].every((f) => item.tags?.includes(f))
+        );
 
   container.innerHTML = filteredItems
     .map((item) => createWorkItemHTML(item))
@@ -50,13 +66,31 @@ function renderWork(items) {
 
 function setupFilters() {
   const filterBtns = document.querySelectorAll(".filter-btn");
+  updateFilterButtonStates(filterBtns);
+
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
-      filterBtns.forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
-      currentFilter = btn.dataset.filter;
+      const tag = btn.dataset.filter;
+      if (tag === "all") {
+        currentFilters.clear();
+      } else if (currentFilters.has(tag)) {
+        currentFilters.delete(tag);
+      } else {
+        currentFilters.add(tag);
+      }
+      filtersToURL(currentFilters);
+      updateFilterButtonStates(filterBtns);
       renderWork(allItems);
     });
+  });
+}
+
+function updateFilterButtonStates(filterBtns) {
+  filterBtns.forEach((btn) => {
+    const tag = btn.dataset.filter;
+    const isActive =
+      tag === "all" ? currentFilters.size === 0 : currentFilters.has(tag);
+    btn.classList.toggle("active", isActive);
   });
 }
 

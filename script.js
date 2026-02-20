@@ -71,13 +71,8 @@ function setupFilters() {
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const tag = btn.dataset.filter;
-      if (tag === "all") {
-        currentFilters.clear();
-      } else if (currentFilters.has(tag)) {
-        currentFilters.delete(tag);
-      } else {
-        currentFilters.add(tag);
-      }
+      currentFilters.clear();
+      if (tag !== "all") currentFilters.add(tag);
       filtersToURL(currentFilters);
       updateFilterButtonStates(filterBtns);
       renderWork(allItems);

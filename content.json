@@ -224,6 +224,36 @@
       "url": "https://github.com/Kallemakela/SKUtils",
       "description": "Additional scikit-learn utilities. Includes e.g. StandardScalerND, which extends scikit-learn StandardScaler to work on multi-dimensional data, enabling easy DL model integration with scikit-learn Pipeline.",
       "tags": ["mini-project", "python", "ML"]
+    },
+    {
+      "title": "Multi-output Training",
+      "url": "https://github.com/Kallemakela/multi_output_training",
+      "description": "Generate multiple unique outputs per sample via dropout, compute loss for each, and average. Tests whether this is more sample-efficient than standard single-output training.",
+      "tags": ["mini-project", "ML", "python"]
+    },
+    {
+      "title": "Conservative Q-Learning (CQL)",
+      "url": "https://github.com/Kallemakela/cql",
+      "description": "Experiments testing how network parameters and state-visit frequency affect conservative Q-values.",
+      "tags": ["mini-project", "RL", "ML", "python"]
+    },
+    {
+      "title": "Finnish Scrabble Helper",
+      "url": "https://github.com/Kallemakela/scrabble",
+      "description": "Finds valid Finnish scrabble words for a given set of letters and jokers.",
+      "tags": ["mini-project", "python"]
+    },
+    {
+      "title": "Scrabble Timer",
+      "url": "https://kallemakela.github.io/time-scrabble/",
+      "description": "Chess-clock-style timer for scrabble where taking longer reduces your points.",
+      "tags": ["mini-project", "javascript"]
+    },
+    {
+      "title": "Junction 2019",
+      "url": "https://github.com/NiklasValuri/junction2019",
+      "description": "Hackathon project for managing construction sites.",
+      "tags": ["mini-project", "javascript"]
     }
   ]
 }

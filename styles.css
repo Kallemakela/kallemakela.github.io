@@ -248,6 +248,31 @@ section {
     transition: all 0.15s ease;
 }
 
+.filter-input {
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #363646;
+    background: #1F1F28;
+    color: #727169;
+    font-family: inherit;
+    font-size: 0.85rem;
+    transition: border-color 0.15s ease, color 0.15s ease;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    width: auto;
+}
+
+.filter-input:focus {
+    border-color: #7E9CD8;
+    color: #DCD7BA;
+}
+
+.filter-input option {
+    background: #1F1F28;
+    color: #DCD7BA;
+}
+
 .filter-btn:hover {
     border-color: #7E9CD8;
     color: #7E9CD8;

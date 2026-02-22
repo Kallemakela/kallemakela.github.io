@@ -64,20 +64,66 @@ function renderWork(items) {
   });
 }
 
+const TAG_COLORS = {
+  ML: "#E46876",
+  RL: "#957FB8",
+  "browser-extension": "#957FB8",
+  javascript: "#E6C384",
+  lua: "#7FB4CA",
+  neuroimaging: "#7FB4CA",
+  python: "#7E9CD8",
+  react: "#7FB4CA",
+  "react-native": "#7FB4CA",
+  shell: "#98BB6C",
+};
+
 function setupFilters() {
   const filterBtns = document.querySelectorAll(".filter-btn");
+  const customInput = document.getElementById("custom-filter");
+  const btnTags = new Set([...filterBtns].map((b) => b.dataset.filter));
+
+  if (currentFilters.size === 1) {
+    const [tag] = currentFilters;
+    if (!btnTags.has(tag)) customInput.value = tag;
+  }
+
   updateFilterButtonStates(filterBtns);
+  updateSelectColor(customInput);
 
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const tag = btn.dataset.filter;
       currentFilters.clear();
       if (tag !== "all") currentFilters.add(tag);
+      customInput.value = "";
+      updateSelectColor(customInput);
       filtersToURL(currentFilters);
       updateFilterButtonStates(filterBtns);
       renderWork(allItems);
     });
   });
+
+  customInput.addEventListener("change", () => {
+    const tag = customInput.value;
+    currentFilters.clear();
+    if (tag) currentFilters.add(tag);
+    updateSelectColor(customInput);
+    filtersToURL(currentFilters);
+    updateFilterButtonStates(filterBtns);
+    renderWork(allItems);
+  });
+}
+
+function updateSelectColor(select) {
+  const color = TAG_COLORS[select.value] ?? "#727169";
+  select.style.color = select.value ? color : "#727169";
+  select.style.borderColor = select.value ? color : "#363646";
+  updateSelectWidth(select);
+}
+
+function updateSelectWidth(select) {
+  const text = select.options[select.selectedIndex]?.text ?? "";
+  select.style.width = `calc(${text.length}ch + 1.6rem + 2px)`;
 }
 
 function updateFilterButtonStates(filterBtns) {

@@ -140,7 +140,14 @@
       "title": "jopvim",
       "url": "https://github.com/kallemakela/jopvim",
       "description": "Joplin plugin for nvim with basic CRUD operations + automatic quick-note categorization and tagging via ollama text embedding + KNN.",
-      "tags": ["project", "lua"]
+      "thumbnail": "thumbnails/jopvim.mp4",
+      "tags": ["mini-project", "lua"]
+    },
+    {
+      "title": "Joplin Text Server",
+      "url": "https://github.com/Kallemakela/joplin-text-server/",
+      "description": "A Flask-based REST API server for intelligent note classification and similarity search in Joplin. Uses ollama embeddings and a KNN to automatically categorize notes and find similar content.",
+      "tags": ["mini-project", "python"]
     },
     {
       "title": "Nested Cross-Val-Test for Scikit-learn & PyTorch Lightning",
@@ -250,9 +257,37 @@
       "tags": ["mini-project", "javascript"]
     },
     {
+      "title": "Recurrent Visual Attention",
+      "url": "https://github.com/Kallemakela/recurrent-visual-attention",
+      "description": "Modified recurrent visual attention model using scattered MNIST, multiple patches at different resolutions, PyTorch Lightning, and a decaying exploration reward for diverse glimpses.",
+      "thumbnail": "thumbnails/recurrent-visal-attention.png",
+      "tags": ["mini-project", "ML", "python"]
+    },
+    {
+      "title": "convert_pandas_html",
+      "url": "https://github.com/Kallemakela/convert_pandas_html",
+      "description": "Preserve pandas styling like colors when exporting to HTML. Works with LaTeX tables.",
+      "thumbnail": "thumbnails/convert-pandas-html.png",
+      "tags": ["mini-project", "python"]
+    },
+    {
+      "title": "Bayesian 3-Point Field Goal Analysis",
+      "url": "https://github.com/Kallemakela/bayesian-3pt-field-goal/blob/main/BDA_Project_Final.pdf",
+      "description": "Predicting how the percentage of 3-point field goals out of all attempted field goals affects total points scored in an NBA game, using Stan: Software for Bayesian Data Analysis.",
+      "thumbnail": "thumbnails/bayesian-3pfg.png",
+      "tags": ["mini-project", "R", "stats"]
+    },
+    {
       "title": "Junction 2019",
       "url": "https://github.com/NiklasValuri/junction2019",
       "description": "Hackathon project for managing construction sites.",
+      "tags": ["mini-project", "javascript"]
+    },
+    {
+      "title": "Evo-Cars",
+      "url": "https://github.com/Kallemakela/Evo-Cars",
+      "description": "Cars learn to drive to a destination using an evolutionary algorithm.",
+      "thumbnail": "thumbnails/Evo-Cars.png",
       "tags": ["mini-project", "javascript"]
     }
   ]

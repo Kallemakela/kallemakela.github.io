@@ -75,13 +75,6 @@
       "tags": ["paper", "neuroimaging", "ML", "python"]
     },
     {
-      "title": "Causal Reasoning in Reinforcement Learning",
-      "url": "https://github.com/Kallemakela/causal-rl",
-      "description": "B.Sc. thesis project on using causal reasoning to improve reinforcement learning methods. Mostly theoretical work on multi-armed bandits.",
-      "thumbnail": "thumbnails/causal-rl.png",
-      "tags": ["project", "RL", "ML"]
-    },
-    {
       "title": "fastfnirs",
       "url": "https://github.com/Kallemakela/fastfnirs",
       "description": "Very high-level package for parsing, preprocessing, visualizing and classifying fNIRS data.",
@@ -89,25 +82,17 @@
       "tags": ["mini-project", "neuroimaging", "python"]
     },
     {
-      "title": "REINFORCE vs PPO from Scratch",
-      "url": "https://github.com/Kallemakela/REINFORCE_vs_PPO_from_scratch",
-      "description": "PPO and REINFORCE implementations without RL libraries.",
-      "thumbnail": "thumbnails/reinforce-vs-ppo-scratch.png",
-      "tags": ["mini-project", "RL", "ML", "python"]
-    },
-    {
-      "title": "Visualizing RL Loss Functions",
-      "url": "https://github.com/Kallemakela/RL_loss_viz",
-      "description": "Building visual intuition for complex RL loss functions, e.g. PPO with many variables and clipping.",
-      "thumbnail": "thumbnails/viz-rl-losses.png",
-      "tags": ["mini-project", "RL", "ML", "python"]
-    },
-    {
-      "title": "Kullback-Leibler Divergence Visualization",
-      "url": "https://github.com/Kallemakela/KL_divergence_viz",
-      "description": "Kullback-Leibler Divergence visualization with how much each point contributes to the divergence.",
-      "thumbnail": "thumbnails/viz-kl.png",
+      "title": "Perception loss VAE",
+      "url": "https://github.com/Kallemakela/vae_img/tree/perception-loss",
+      "description": "Large scale image VAE with reconstruction and perception loss.",
       "tags": ["mini-project", "ML", "python"]
+    },
+    {
+      "title": "Causal Reasoning in Reinforcement Learning",
+      "url": "https://github.com/Kallemakela/causal-rl",
+      "description": "B.Sc. thesis project on using causal reasoning to improve reinforcement learning methods. Mostly theoretical work on multi-armed bandits.",
+      "thumbnail": "thumbnails/causal-rl.png",
+      "tags": ["project", "RL", "ML"]
     },
     {
       "title": "More Informative Group Relative Advantage Losses",
@@ -123,11 +108,25 @@
       "tags": ["project", "javascript"]
     },
     {
+      "title": "Suika Game RL Agent",
+      "url": "https://github.com/Kallemakela/suika",
+      "description": "Reinforcement learning agent that learns to play Suika Game.",
+      "thumbnail": "thumbnails/suika.mp4",
+      "tags": ["mini-project", "RL", "ML", "python"]
+    },
+    {
       "title": "GNN Sudoku solver",
       "url": "https://github.com/Kallemakela/gnn-sudoku",
       "description": "A Sudoku solver implemented using a Graph Neural Network based on Recurrent Relational Networks (Palm et al., 2018).",
       "thumbnail": "thumbnails/gnn-sudoku.png",
       "tags": ["mini-project", "ML", "python"]
+    },
+    {
+      "title": "Recurrent Visual Attention",
+      "url": "https://github.com/Kallemakela/recurrent-visual-attention",
+      "description": "Modified recurrent visual attention model using scattered MNIST, multiple patches at different resolutions, PyTorch Lightning, and a decaying exploration reward for diverse glimpses.",
+      "thumbnail": "thumbnails/recurrent-visal-attention.png",
+      "tags": ["mini-project", "RL", "ML", "python"]
     },
     {
       "title": "unogs",
@@ -150,10 +149,35 @@
       "tags": ["mini-project", "python"]
     },
     {
+      "title": "SharedDepthwiseConv",
+      "url": "https://github.com/Kallemakela/shared-weight-cnn/",
+      "description": "Depthwise convolution layer that applies the same filters independently to all channels.",
+      "tags": ["mini-project", "ML", "python"]
+    },
+    {
       "title": "Nested Cross-Val-Test for Scikit-learn & PyTorch Lightning",
       "url": "https://github.com/Kallemakela/nestedCVT",
       "description": "Performs nested cross-val-test evaluation for any Scikit-learn or PyTorch Lightning model.",
       "thumbnail": "thumbnails/nested-cvt.jpg",
+      "tags": ["mini-project", "python", "ML"]
+    },
+    {
+      "title": "subsampling_significance_tests",
+      "url": "https://github.com/Kallemakela/subsampling_significance_tests",
+      "description": "Implementation and analysis of statistical tests for comparing the performance of machine learning models using resampling methods, such as repeated cross-validation.",
+      "thumbnail": "thumbnails/subsampling-tests.png",
+      "tags": ["mini-project", "ML", "python", "stats"]
+    },
+    {
+      "title": "Custom CV",
+      "url": "https://github.com/Kallemakela/customCV",
+      "description": "Additional cross-validation iterators for scikit-learn. Useful for group CV that require a lot of folds and repetitions due to high variance in validation and test scores (usually due to small dataset size).",
+      "tags": ["mini-project", "python", "ML"]
+    },
+    {
+      "title": "SKUtils",
+      "url": "https://github.com/Kallemakela/SKUtils",
+      "description": "Additional scikit-learn utilities. Includes e.g. StandardScalerND, which extends scikit-learn StandardScaler to work on multi-dimensional data, enabling easy DL model integration with scikit-learn Pipeline.",
       "tags": ["mini-project", "python", "ML"]
     },
     {
@@ -163,6 +187,25 @@
       "tags": ["mini-project", "shell"]
     },
     {
+      "title": "Ensembling from CV folds",
+      "url": "https://github.com/Kallemakela/Ensembling-from-CV-folds",
+      "description": "Instead of refitting on entire train set after cross-validation, we use the already fitted models as an ensemble for test time prediction.",
+      "tags": ["mini-project", "python", "ML"]
+    },
+    {
+      "title": "Multi-output Training",
+      "url": "https://github.com/Kallemakela/multi_output_training",
+      "description": "Generate multiple unique outputs per sample via dropout, compute loss for each, and average. Tests whether this is more sample-efficient than standard single-output training.",
+      "tags": ["mini-project", "ML", "python"]
+    },
+    {
+      "title": "Mixup Implementation and Visualization",
+      "url": "https://github.com/Kallemakela/mixup",
+      "description": "Implementation and visualization of the Mixup data augmentation technique.",
+      "thumbnail": "thumbnails/mixup.png",
+      "tags": ["mini-project", "ML", "python"]
+    },
+    {
       "title": "Contrastive learning embedding classification experiment",
       "url": "https://github.com/Kallemakela/mnist_contrastive",
       "description": "A contrastive learning experiment using triplet loss to learn embeddings from MNIST data, t-SNE visualization and embedding classification with classic ML methods.",
@@ -170,10 +213,18 @@
       "tags": ["mini-project", "python", "ML"]
     },
     {
-      "title": "Ensembling from CV folds",
-      "url": "https://github.com/Kallemakela/Ensembling-from-CV-folds",
-      "description": "Instead of refitting on entire train set after cross-validation, we use the already fitted models as an ensemble for test time prediction.",
-      "tags": ["mini-project", "python", "ML"]
+      "title": "REINFORCE vs PPO from Scratch",
+      "url": "https://github.com/Kallemakela/REINFORCE_vs_PPO_from_scratch",
+      "description": "PPO and REINFORCE implementations without RL libraries.",
+      "thumbnail": "thumbnails/reinforce-vs-ppo-scratch.png",
+      "tags": ["mini-project", "RL", "ML", "python"]
+    },
+    {
+      "title": "TD3, PPO, and TD3+BC from Scratch",
+      "url": "https://github.com/Kallemakela/TD3_BC",
+      "description": "Implementations of Twin Delayed Deep Deterministic Policy Gradient (TD3), Proximal Policy Optimization (PPO), and TD3 with Behavior Cloning (TD3+BC).",
+      "thumbnail": "thumbnails/td3bc.png",
+      "tags": ["mini-project", "RL", "ML", "python"]
     },
     {
       "title": "Iterative Behaviour Cloning",
@@ -189,17 +240,17 @@
       "tags": ["mini-project", "RL", "ML", "python"]
     },
     {
-      "title": "Perception loss VAE",
-      "url": "https://github.com/Kallemakela/vae_img/tree/perception-loss",
-      "description": "Large scale image VAE with reconstruction and perception loss.",
-      "tags": ["mini-project", "ML", "python"]
+      "title": "Conservative Q-Learning (CQL)",
+      "url": "https://github.com/Kallemakela/cql",
+      "description": "Experiments testing how network parameters and state-visit frequency affect conservative Q-values.",
+      "tags": ["mini-project", "RL", "ML", "python"]
     },
     {
-      "title": "subsampling_significance_tests",
-      "url": "https://github.com/Kallemakela/subsampling_significance_tests",
-      "description": "Implementation and analysis of statistical tests for comparing the performance of machine learning models using resampling methods, such as repeated cross-validation.",
-      "thumbnail": "thumbnails/subsampling-tests.png",
-      "tags": ["mini-project", "ML", "python"]
+      "title": "Visualizing RL Loss Functions",
+      "url": "https://github.com/Kallemakela/RL_loss_viz",
+      "description": "Building visual intuition for complex RL loss functions, e.g. PPO with many variables and clipping.",
+      "thumbnail": "thumbnails/viz-rl-losses.png",
+      "tags": ["mini-project", "RL", "ML", "python"]
     },
     {
       "title": "Mobile PDF Reflow Viewer",
@@ -212,7 +263,7 @@
       "url": "https://github.com/Kallemakela/subsampling-CIs",
       "description": "Research on subsampling bootstrap methods for constructing confidence intervals, comparing standard bootstrap with subsampling and MOON (M-out-of-N) bootstrap. Also testing a bias correction method for subsampling.",
       "thumbnail": "thumbnails/subsampling-cis.png",
-      "tags": ["mini-project", "python", "ML"]
+      "tags": ["mini-project", "python", "ML", "stats"]
     },
     {
       "title": "Classification Bad Examples",
@@ -221,28 +272,11 @@
       "tags": ["mini-project", "python", "ML"]
     },
     {
-      "title": "Custom CV",
-      "url": "https://github.com/Kallemakela/customCV",
-      "description": "Additional cross-validation iterators for scikit-learn. Useful for group CV that require a lot of folds and repetitions due to high variance in validation and test scores (usually due to small dataset size).",
-      "tags": ["mini-project", "python", "ML"]
-    },
-    {
-      "title": "SKUtils",
-      "url": "https://github.com/Kallemakela/SKUtils",
-      "description": "Additional scikit-learn utilities. Includes e.g. StandardScalerND, which extends scikit-learn StandardScaler to work on multi-dimensional data, enabling easy DL model integration with scikit-learn Pipeline.",
-      "tags": ["mini-project", "python", "ML"]
-    },
-    {
-      "title": "Multi-output Training",
-      "url": "https://github.com/Kallemakela/multi_output_training",
-      "description": "Generate multiple unique outputs per sample via dropout, compute loss for each, and average. Tests whether this is more sample-efficient than standard single-output training.",
+      "title": "Kullback-Leibler Divergence Visualization",
+      "url": "https://github.com/Kallemakela/KL_divergence_viz",
+      "description": "Kullback-Leibler Divergence visualization with how much each point contributes to the divergence.",
+      "thumbnail": "thumbnails/viz-kl.png",
       "tags": ["mini-project", "ML", "python"]
-    },
-    {
-      "title": "Conservative Q-Learning (CQL)",
-      "url": "https://github.com/Kallemakela/cql",
-      "description": "Experiments testing how network parameters and state-visit frequency affect conservative Q-values.",
-      "tags": ["mini-project", "RL", "ML", "python"]
     },
     {
       "title": "Finnish Scrabble Helper",
@@ -255,13 +289,6 @@
       "url": "https://kallemakela.github.io/time-scrabble/",
       "description": "Chess-clock-style timer for scrabble where taking longer reduces your points.",
       "tags": ["mini-project", "javascript"]
-    },
-    {
-      "title": "Recurrent Visual Attention",
-      "url": "https://github.com/Kallemakela/recurrent-visual-attention",
-      "description": "Modified recurrent visual attention model using scattered MNIST, multiple patches at different resolutions, PyTorch Lightning, and a decaying exploration reward for diverse glimpses.",
-      "thumbnail": "thumbnails/recurrent-visal-attention.png",
-      "tags": ["mini-project", "ML", "python"]
     },
     {
       "title": "convert_pandas_html",
@@ -289,6 +316,18 @@
       "description": "Cars learn to drive to a destination using an evolutionary algorithm.",
       "thumbnail": "thumbnails/Evo-Cars.png",
       "tags": ["mini-project", "javascript"]
+    },
+    {
+      "title": "University Course Recommendation System",
+      "url": "https://kallemakela.github.io/CourseRS/",
+      "description": "Prototype course recommendation system for university students.",
+      "tags": ["mini-project", "javascript"]
+    },
+    {
+      "title": "Domo Analytics",
+      "url": "https://github.com/Kallemakela/domo_analytics",
+      "description": "Predicts when you will receive a housing offer from AYY based on queue data.",
+      "tags": ["mini-project", "python"]
     }
   ]
 }

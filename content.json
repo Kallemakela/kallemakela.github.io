@@ -181,6 +181,13 @@
       "tags": ["mini-project", "python", "ML"]
     },
     {
+      "title": "GridSearchEpoch",
+      "url": "https://github.com/Kallemakela/GridSearchEpoch",
+      "description": "GridSearchEpochCV works like scikit-learn GridSearchCV but treats epoch as an implicit hyperparameter, so epoch selection is optimized during grid search without refitting for each epoch value.",
+      "thumbnail": "thumbnails/moons_cv_scores.png",
+      "tags": ["mini-project", "python", "ML"]
+    },
+    {
       "title": "MTS to MP4 Converter",
       "url": "https://github.com/Kallemakela/MTS2MP4",
       "description": "Automatic bulk MTS to MP4 Converter.",
